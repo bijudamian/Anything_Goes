@@ -1,0 +1,83 @@
+body {
+    background-color: #0d0d0d;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#terminal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #00ff00;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+p {
+    margin: 5px 0;
+}
+
+#output {
+    flex-grow: 1;
+    overflow-y: auto;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.log-entry {
+    margin-bottom: 5px;
+}
+
+.timestamp {
+    color: #008800;
+    margin-right: 10px;
+}
+
+#input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 10px;
+}
+
+.cursor {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0d0d0d;
+}
+::-webkit-scrollbar-thumb {
+    background: #004400;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #00ff00;
+}
