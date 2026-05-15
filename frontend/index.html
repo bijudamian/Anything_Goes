@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load Socket.io client -->
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body>
+    <div id="terminal">
+        <div id="header">
+            <h1>SYSTEM TERMINAL v1.0</h1>
+            <p>Initializing connection to mainframe...</p>
+            <p id="api-status">API Status: Pinging...</p>
+        </div>
+        <div id="output"></div>
+        <div id="input-line">
+            <span class="prompt">guest@system:~$</span>
+            <span class="cursor">_</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
